@@ -7,16 +7,16 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
+#import "MXPlaygroundProtocol.h"
+@interface ViewController ()<MXPlaygroundProtocol>
 
 @end
 
 @implementation ViewController
-
+MXHUBIMP(@"type1", @"example", @"an example")
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = UIColor.grayColor;
 }
 
 

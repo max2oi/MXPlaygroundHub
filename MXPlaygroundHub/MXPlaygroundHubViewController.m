@@ -75,7 +75,12 @@ static NSString *const kLastVCNameKey = @"kLastVCClassKey";
 
     CGFloat typeTableViewWidth = 100;
     CGFloat spacing = 2;
-    CGFloat tableViewY = self.view.safeAreaInsets.top;
+    CGFloat tableViewY;
+    if (@available(iOS 11.0, *)) {
+        tableViewY = self.view.safeAreaInsets.top;
+    } else {
+        tableViewY = 64;
+    }
     CGFloat height = CGRectGetHeight(self.view.frame) - tableViewY;
     CGFloat itemTableViewWidth = CGRectGetWidth(self.view.frame) - spacing - typeTableViewWidth;
     self.typeTableView.frame = CGRectMake(0, tableViewY, typeTableViewWidth, height);
