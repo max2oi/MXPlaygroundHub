@@ -13,6 +13,7 @@
 		AEC73A3120FE4F88003E222A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC73A3020FE4F88003E222A /* Assets.xcassets */; };
 		AEC73A3420FE4F88003E222A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC73A3220FE4F88003E222A /* LaunchScreen.storyboard */; };
 		AEC73A3720FE4F88003E222A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC73A3620FE4F88003E222A /* main.m */; };
+		AEC73A4120FE5006003E222A /* MXPlaygroundHubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC73A3F20FE5006003E222A /* MXPlaygroundHubViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		AEC73A3320FE4F88003E222A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEC73A3520FE4F88003E222A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEC73A3620FE4F88003E222A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AEC73A3E20FE5006003E222A /* MXPlaygroundProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXPlaygroundProtocol.h; sourceTree = "<group>"; };
+		AEC73A3F20FE5006003E222A /* MXPlaygroundHubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXPlaygroundHubViewController.m; sourceTree = "<group>"; };
+		AEC73A4020FE5006003E222A /* MXPlaygroundHubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXPlaygroundHubViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 		AEC73A1B20FE4F87003E222A = {
 			isa = PBXGroup;
 			children = (
+				AEC73A3D20FE5006003E222A /* MXPlaygroundHub */,
 				AEC73A2620FE4F88003E222A /* MXPlaygroundHubExample */,
 				AEC73A2520FE4F88003E222A /* Products */,
 			);
@@ -69,6 +74,16 @@
 				AEC73A3620FE4F88003E222A /* main.m */,
 			);
 			path = MXPlaygroundHubExample;
+			sourceTree = "<group>";
+		};
+		AEC73A3D20FE5006003E222A /* MXPlaygroundHub */ = {
+			isa = PBXGroup;
+			children = (
+				AEC73A3E20FE5006003E222A /* MXPlaygroundProtocol.h */,
+				AEC73A3F20FE5006003E222A /* MXPlaygroundHubViewController.m */,
+				AEC73A4020FE5006003E222A /* MXPlaygroundHubViewController.h */,
+			);
+			path = MXPlaygroundHub;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +158,7 @@
 			files = (
 				AEC73A2C20FE4F88003E222A /* ViewController.m in Sources */,
 				AEC73A3720FE4F88003E222A /* main.m in Sources */,
+				AEC73A4120FE5006003E222A /* MXPlaygroundHubViewController.m in Sources */,
 				AEC73A2920FE4F88003E222A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +299,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 24B5U8T22W;
 				INFOPLIST_FILE = MXPlaygroundHubExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -292,6 +308,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = max2oi.MXPlaygroundHubExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cc01e7f4-496b-4735-ada3-740ab97408e3";
+				PROVISIONING_PROFILE_SPECIFIER = maxiao_dev;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -300,8 +318,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 24B5U8T22W;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MXPlaygroundHubExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +327,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = max2oi.MXPlaygroundHubExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
