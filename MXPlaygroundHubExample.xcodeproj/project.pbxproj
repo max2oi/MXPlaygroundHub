@@ -12,7 +12,7 @@
 		AEC73A3120FE4F88003E222A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC73A3020FE4F88003E222A /* Assets.xcassets */; };
 		AEC73A3420FE4F88003E222A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC73A3220FE4F88003E222A /* LaunchScreen.storyboard */; };
 		AEC73A3720FE4F88003E222A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC73A3620FE4F88003E222A /* main.m */; };
-		AEC73A4120FE5006003E222A /* MXPlaygroundHubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC73A3F20FE5006003E222A /* MXPlaygroundHubViewController.m */; };
+		BF8F44B7D3114192AF46A634 /* MXPlaygroundHubController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8F4CCDB735996D122263C2 /* MXPlaygroundHubController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +26,8 @@
 		AEC73A3520FE4F88003E222A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEC73A3620FE4F88003E222A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AEC73A3E20FE5006003E222A /* MXPlaygroundProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXPlaygroundProtocol.h; sourceTree = "<group>"; };
-		AEC73A3F20FE5006003E222A /* MXPlaygroundHubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXPlaygroundHubViewController.m; sourceTree = "<group>"; };
-		AEC73A4020FE5006003E222A /* MXPlaygroundHubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXPlaygroundHubViewController.h; sourceTree = "<group>"; };
+		BF8F48931412299BEAAF2D7E /* MXPlaygroundHubController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXPlaygroundHubController.h; sourceTree = "<group>"; };
+		BF8F4CCDB735996D122263C2 /* MXPlaygroundHubController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXPlaygroundHubController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				AEC73A3E20FE5006003E222A /* MXPlaygroundProtocol.h */,
-				AEC73A3F20FE5006003E222A /* MXPlaygroundHubViewController.m */,
-				AEC73A4020FE5006003E222A /* MXPlaygroundHubViewController.h */,
+				BF8F4CCDB735996D122263C2 /* MXPlaygroundHubController.m */,
+				BF8F48931412299BEAAF2D7E /* MXPlaygroundHubController.h */,
 			);
 			path = MXPlaygroundHub;
 			sourceTree = "<group>";
@@ -154,8 +154,8 @@
 			files = (
 				AEC73A2C20FE4F88003E222A /* ViewController.m in Sources */,
 				AEC73A3720FE4F88003E222A /* main.m in Sources */,
-				AEC73A4120FE5006003E222A /* MXPlaygroundHubViewController.m in Sources */,
 				AEC73A2920FE4F88003E222A /* AppDelegate.m in Sources */,
+				BF8F44B7D3114192AF46A634 /* MXPlaygroundHubController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

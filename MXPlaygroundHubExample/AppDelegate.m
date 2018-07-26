@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "MXPlaygroundHubViewController.h"
+#import "MXPlaygroundHubController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[MXPlaygroundHubViewController alloc] init]];
+    self.window.rootViewController = [[MXPlaygroundHubController alloc] init];
     [self.window makeKeyAndVisible];
     return YES;
 }
