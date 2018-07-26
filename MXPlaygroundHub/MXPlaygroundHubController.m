@@ -4,7 +4,7 @@
 //
 
 #import <objc/runtime.h>
-#import "MXPlaygroundHubViewController.h"
+#import "MXPlaygroundHubController.h"
 #import "MXPlaygroundProtocol.h"
 
 @interface MXHubModel : NSObject
@@ -16,7 +16,7 @@
 - (UIViewController *)spawnController;
 @end
 
-@interface MXPlaygroundHubViewController() <UITableViewDelegate, UITableViewDataSource>
+@interface MXPlaygroundHubViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong)UITableView *typeTableView;
 @property (nonatomic, strong)UITableView *itemTableView;
 @property (nonatomic, strong)NSArray<MXHubModel *> *hubModels;
@@ -242,4 +242,16 @@ static NSString *const kLastVCNameKey = @"kLastVCClassKey";
     return controller;
 }
 
+@end
+
+@implementation MXPlaygroundHubController
+- (instancetype)init {
+    self = [super initWithRootViewController:[[MXPlaygroundHubViewController alloc] init]];
+    if (self) {
+        [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:47/255.0f green:184/255.0f blue:253/255.0f alpha:1.0]];
+        [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+        [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];;
+    }
+    return self;
+}
 @end

@@ -6,5 +6,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface MXPlaygroundHubViewController : UIViewController
+@interface MXPlaygroundHubController : UINavigationController
 @end
+
