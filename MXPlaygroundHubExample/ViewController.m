@@ -13,7 +13,7 @@
 @end
 
 @implementation ViewController
-MXHUBIMP(@"type1", @"example", @"an example")
+MXHUBIMP(@"type1", @"example", @"long description long description long description long description long description long description")
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.grayColor;
