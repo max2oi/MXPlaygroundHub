@@ -157,6 +157,14 @@ static NSString *const kLastVCNameKey = @"kLastVCClassKey";
     return YES;
 }
 
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section {
+    if ([view isKindOfClass:UITableViewHeaderFooterView.class]) {
+        UITableViewHeaderFooterView *headerFooterView = (UITableViewHeaderFooterView *)view;
+        headerFooterView.tintColor = [UIColor colorWithRed:47/255.0f green:184/255.0f blue:253/255.0f alpha:1.0];
+        headerFooterView.textLabel.textColor = UIColor.whiteColor;
+    }
+}
+
 #pragma mark - filters
 
 - (NSArray<NSString *> *)maxmxHub_Types {
