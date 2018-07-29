@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "MXPlaygroundHub"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "用于快速集成ViewController的Controller"
 
   s.description  = <<-DESC
